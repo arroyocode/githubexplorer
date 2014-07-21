@@ -1,0 +1,11 @@
+<div class="back">
+    <a href="#/main">Back to Search</a> | <a href="#/user/{{repo.owner.login}}">Back to the <b>{{repo.owner.login}}</b> Repo List</a>
+</div>
+<div><b>Repo Name:</b> {{repo.name}}</div>
+<p ng-show="repo.collaborators">The following collaborators have contributed to this repository.</p>
+<div ng-repeat="user in repo.collaborators">
+    <div class="collaborator">
+        <img ng-src="http://www.gravatar.com/avatar/{{user.gravatar_id}}" alt="{{user.login}}" />
+        <br />{{user.login}}
+    </div>
+</div>

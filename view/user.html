@@ -1,0 +1,36 @@
+<div class="back"><a href="#/main">Back to Search</a></div>
+<div class="userDetails">
+    <div class="userPhoto">
+        <img ng-src="http://www.gravatar.com/avatar/{{user.gravatar_id}}" title="{{user.name}}" />
+    </div>
+    <div class="userInfo"><b>Name:</b> {{user.name}}
+        <br /><b># of Public Repos: </b> {{user.public_repos}}
+        <br /><b>Joined:</b> {{user.created_at}}
+        <br /><b>URL:</b>  <a href="{{user.url}}" target="_blank">{{user.url}}</a>
+    </div>
+    <div class="orderBy">
+        Sort By:
+        <select id="sortOrder" ng-model="repoSortOrder">
+            <option value="+name">Name</option>
+            <option value="-stargazers_count">Stars</option>
+            <option value="+language">Language</option>
+        </select>
+    </div>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Stars</th>
+            <th>Language</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="repo in repos | orderBy:repoSortOrder" ng-class-even="'even'" ng-class-odd="'odd'">
+            <td><a href="{{repo.html_url}}" target="_blank"><a href="#/repo/{{user.login}}/{{repo.name}}">{{repo.name}}</a>
+            </td>
+            <td>{{repo.stargazers_count | number}}</td>
+            <td>{{repo.language}}</td>
+        </tr>
+    </tbody>
+</table>
