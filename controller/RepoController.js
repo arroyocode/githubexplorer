@@ -2,7 +2,7 @@
 
     'use strict';
 
-    var module = angular.module("githubExplorer");
+    var module = angular.module('githubExplorer');
     
     var RepoController = function($scope, $routeParams, github){
       
@@ -22,5 +22,5 @@
     };
     
     RepoController.$inject = ['$scope', '$routeParams', 'github'];
-    module.controller("RepoController", RepoController);
+    module.controller('RepoController', RepoController);
 })();

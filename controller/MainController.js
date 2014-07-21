@@ -2,7 +2,7 @@
 
     'use strict';
 
-    var app = angular.module("githubExplorer");
+    var app = angular.module('githubExplorer');
 
     var MainController = function($scope, $interval, $location) {
 
@@ -23,15 +23,15 @@
                 $interval.cancel(countdownInterval);
                 $scope.countdown = null;
             }
-            $location.path("/user/" + username);
+            $location.path('/user/' + username);
         }
 
-        $scope.username = "angular";
+        $scope.username = 'angular';
         $scope.countdown = 10;
         startCountdown();
     };
 
     MainController.$inject = ['$scope', '$interval', '$location'];
-    app.controller("MainController", MainController);
+    app.controller('MainController', MainController);
 
 })();
