@@ -1,5 +1,4 @@
 (function() {
-
     'use strict';
 
     var app = angular.module('githubExplorer');
@@ -26,5 +25,4 @@
 
     UserController.$inject = ['$scope', 'github', '$routeParams'];
     app.controller('UserController', UserController);
-
 })();

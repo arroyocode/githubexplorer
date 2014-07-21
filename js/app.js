@@ -1,5 +1,4 @@
 (function() {
-
     'use strict';
 
     var app = angular.module('githubExplorer', ['ngRoute']);
@@ -20,5 +19,4 @@
             })
             .otherwise({redirectTo: '/main'});
     }]);
-
 })();

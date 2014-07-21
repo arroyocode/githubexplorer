@@ -1,5 +1,4 @@
 (function() {
-
     'use strict';
 
     var app = angular.module('githubExplorer');
@@ -33,5 +32,4 @@
 
     MainController.$inject = ['$scope', '$interval', '$location'];
     app.controller('MainController', MainController);
-
 })();
