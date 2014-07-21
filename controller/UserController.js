@@ -1,5 +1,7 @@
 (function() {
 
+    'use strict';
+
     var app = angular.module("githubExplorer");
 
     var UserController = function($scope, github, $routeParams) {
@@ -22,6 +24,7 @@
         github.getUser($scope.username).then(onUserComplete, onError);
     };
 
+    UserController.$inject = ['$scope', 'github', '$routeParams'];
     app.controller("UserController", UserController);
 
 })();

@@ -1,5 +1,7 @@
 (function() {
 
+    'use strict';
+
     var github = function($http) {
 
         var getUser = function(username) {
@@ -39,6 +41,6 @@
     };
 
     var module = angular.module("githubExplorer");
-    module.factory("github", github);
+    module.factory("github", ['$http', github]);
 
 })();

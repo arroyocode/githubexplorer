@@ -1,8 +1,10 @@
 (function() {
 
+    'use strict';
+
     var app = angular.module("githubExplorer", ["ngRoute"]);
 
-    app.config(function($routeProvider) {
+    app.config(['$routeProvider', function($routeProvider) {
         $routeProvider
             .when("/main", {
                 templateUrl: "view/main.html",
@@ -17,6 +19,6 @@
                 controller: "RepoController"
             })
             .otherwise({redirectTo: "/main"});
-    });
+    }]);
 
 })();

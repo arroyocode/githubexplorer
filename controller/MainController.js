@@ -1,5 +1,7 @@
 (function() {
 
+    'use strict';
+
     var app = angular.module("githubExplorer");
 
     var MainController = function($scope, $interval, $location) {
@@ -29,6 +31,7 @@
         startCountdown();
     };
 
+    MainController.$inject = ['$scope', '$interval', '$location'];
     app.controller("MainController", MainController);
 
 })();
