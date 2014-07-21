@@ -1,4 +1,4 @@
 GITHUB EXPLORER
 ==============
 
-Angular.js app for exploring GitHub repositories by username.
+A simple Angular.js project for exploring GitHub by user.
