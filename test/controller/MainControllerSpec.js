@@ -17,4 +17,11 @@ describe('MainController', function () {
     it('should have an initial username', function () {
         expect(scope.username).toBe('angular');
     });
+
+    it('should suspend countdown on search', function () {
+        scope.search('angular');
+        scope.$digest();
+        expect(scope.countdown).toBeNull();
+    });
+
 });
