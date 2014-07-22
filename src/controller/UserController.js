@@ -1,20 +1,20 @@
-(function() {
+(function () {
     'use strict';
 
     var app = angular.module('githubExplorer');
 
-    var UserController = function($scope, github, $routeParams) {
+    var UserController = function ($scope, github, $routeParams) {
 
-        var onUserComplete = function(data) {
+        var onUserComplete = function (data) {
             $scope.user = data;
             github.getRepos($scope.user).then(onRepos, onError);
         };
 
-        var onRepos = function(data) {
+        var onRepos = function (data) {
             $scope.repos = data;
         };
 
-        var onError = function(reason) {
+        var onError = function () {
             $scope.error = 'Sorry! Could not fetch the data.';
         };
 
