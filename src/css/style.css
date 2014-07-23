@@ -4,53 +4,66 @@ body {
     padding: 20px;
     font-size: 12px;
 }
+
 a {
     font-size: 11px;
     color: #0033cc;
     text-decoration: none;
 }
+
 a: hover {
     color: #0099ff;
 }
+
 h1 {
     margin: 0;
     padding: 0;
 }
+
 p {
     font-size: 12px;
 }
+
 img {
     border: 1px solid #aaaaaa;
     padding: 2px;
     margin-left: 2px;
 }
+
 input,
 span {
     float: left;
 }
+
 span {
     color: #ff0000;
     margin: 6px 0 0 4px;
 }
-.searchForm{
+
+.searchForm {
     margin: 10px 0;
 }
+
 .userDetails {
     clear: both;
 }
+
 .userPhoto {
     float: left;
     margin: 6px 0;
 }
+
 .userInfo {
     float: left;
     margin: 6px 0 6px 10px;
     line-height: 20px;
 }
+
 .orderBy {
     float: right;
     margin-top: 66px;
 }
+
 .collaborator {
     width: 86px;
     float: left;
@@ -58,26 +71,32 @@ span {
     margin: 0 12px 12px 0;
     text-align: center;
 }
+
 table {
     width: 100%;
 }
+
 th {
     text-align: left;
     background-color: #aaaaaa;
     color: #f7f7f7;
     padding: 4px;
 }
+
 td {
     font-size: 11px;
     padding: 0 4px;
     line-height: 20px;
 }
+
 .even {
     background-color: #f2f2f2;
 }
+
 .odd {
     background-color: #e7e7e7;
 }
+
 .back {
     text-align: center;
     margin: 0 auto;
